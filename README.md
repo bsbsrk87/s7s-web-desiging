@@ -1,1 +1,1 @@
-# s7s-web-desiging
+# lets to learn web design with us

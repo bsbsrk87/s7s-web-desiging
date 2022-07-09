@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title> books</title>
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/18-education-school/read-book.png">
+    <meta charset="utf-8">
+    <meta name="description" content="Easy Learn web site Design ">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="./css/widescreen.css" media="screen and (min-width:1100px)">
+     
+    
+
+
+
+</head>
+
+<body>
+   <header>
+       <div class="container">
+         <div class="header-content" id="header-content">
+          <div class="logo">
+              <a href="#main-img"><img src="images/logo.jpg"></a>
+          </div>
+           <nav>
+               <a href="#main-img" >الرئيسيه</a>
+               <a href="#courses">الكورسات</a>
+               <a href="#conatat-section">التواصل</a>
+           </nav>
+           </div>
+    
+       </div>
+   </header>
+   <section id="main-img">
+    <div class="section-content">
+     <h1>
+     تعلم معنا <span> تصميم المواقع</span><br> باحترافيه
+     </h1>
+     <a  href="#conatat-section" class="btn"> تواصل معنا</a>
+     </div>
+      
+       
+   </section>
+   <section id="courses">
+       <div class="container">
+        <h2> الكورسات</h2>
+         <div class="courses-content">
+          <div class="course">
+              <img src="https://tadviser.com/images/7/76/HTML5.jpg">
+              <h3>  <span>html</span> احتراف </h3>
+              <a  href="index.html.html" class="btn"> اقراء المزيد</a>
+              
+          </div>
+          <div class="course">
+              <img src="./images/css.png">
+              <h3>  <span>css</span> احتراف </h3>
+              <a  href="css.html" class="btn"> اقراء المزيد</a>
+              
+          </div>
+            <div class="course">
+              <img src="./images/js.jpg">
+              <h3>  <span>java script</span> احتراف </h3>
+              <a  href="indexjs.html" class="btn"> اقراء المزيد</a>
+              
+            </div>
+            <div class="course">
+              <img src="./images/jq.png">
+              <h3>  <span>jquery</span> احتراف </h3>
+              <a  href="indexjqu.html" class="btn"> اقراء المزيد</a>
+              
+            </div>
+            <div class="course">
+              <img src="./images/bootstrap-logo-vector.png">
+              <h3>  <span>Bootstrap</span> احتراف </h3>
+              <a  href="indexboot.html" class="btn"> اقراء المزيد</a>
+              
+            </div>
+            <div class="course">
+              <img src="./images/reactjs-logo-sticker (1).jpg">
+              <h3>  <span>react</span> احتراف </h3>
+              <a  href="indexreact.html" class="btn"> اقراء المزيد</a>
+              
+            </div>
+            
+            
+            
+        </div>
+                   
+                    
+
+           
+       </div>
+   </section>
+   <section id="photo">
+   </section>
+    
+   <section id="conatat-section">
+     <h2> تواصل معنا</h2>
+     
+      <form class="contact-form" onsubmit="sendEmail();reset();return false;">
+         <input type="text" id="name" class="form-text" placeholder="ادخل اسمك">
+         <input type="email" id="email" class="form-text" placeholder="ادخل ايميلك">
+         <input type="text" id="phone" class="form-text" placeholder="ادخل رقم هاتفك">
+         <textarea id="mesg" class="form-text" placeholder="رسالتك"></textarea>
+         <input  class="btn" type="submit" value="ارسال">
+      </form>
+      
+      <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100000556048524"><i class="fa fa-facebook-official s7s" ></i></a>
+         <a href="https://www.youtube.com/channel/UCV7wBFvMPYifAxrJbOR1V_Q"> <i class="fa fa-youtube-play s7s" ></i></a>
+         
+           
+       </div>
+          
+       
+       
+    </section>
+    <footer>
+         <div class="container">
+         <h2> تم تصميمه من قبل المهندس حسين نقد</h2>
+    
+       </div>
+    </footer>
+   
+   
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "srk87srk@gmail.com",
+    Password : "Hsrk1351987srkH",
+    To : 'srk87srk@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New contact from Enquiry",
+    Body : "Name:" + document.getElementById("name").value 
+            + "<br> Email:" + document.getElementById("email").value
+            + "<br> Phone:" + document.getElementById("phone").value
+            + "<br> Message:" + document.getElementById("mesg").value
+}).then(
+  message => alert("Message sent succesfully")
+);
+      
+    }
+    </script>
+</body>
+
+
+
+</html>
